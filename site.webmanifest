@@ -1,0 +1,16 @@
+{
+  "name": "Structure Lab AU",
+  "short_name": "Structure Lab",
+  "description": "Australian family, land and purpose structures",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#EEECE3",
+  "theme_color": "#2F5D4F",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
