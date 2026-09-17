@@ -6,22 +6,16 @@ General information only. Not tax, legal or financial advice.
 
 ## Public URLs
 
-- Shareable GitHub Pages: https://v2-prog.github.io/structure-lab/
-- Custom domain: https://earthacer.in/
-- Source repo: https://github.com/v2-prog/structure-lab
+- Canonical: https://acerlab.link/
+- Cloudflare Pages preview: (set after first deploy)
+- GitHub Pages backup: https://v2-prog.github.io/structure-lab/
+- Source: https://github.com/v2-prog/structure-lab
 
-The custom domain goes live after Hostinger DNS points at GitHub Pages (see below).
+`earthacer.in` stays parked at Hostinger. Do not point it at this project.
 
-## Hostinger DNS for earthacer.in
+## Cloudflare Pages
 
-In hPanel → Domains → earthacer.in → DNS Editor, replace parked Hostinger A records with:
+Connect this repo (branch `main`). Framework: None. Build command: empty. Output directory: `/`.
 
-| Type | Name | Points to |
-| --- | --- | --- |
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| CNAME | `www` | `v2-prog.github.io` |
-
-Then wait for DNS. GitHub Pages → Enforce HTTPS once the domain is verified.
+Then Custom domains → add `acerlab.link` and `www.acerlab.link`.
+The zone is already on Cloudflare Registrar, so SSL is automatic.
