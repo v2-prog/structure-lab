@@ -1,214 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acer Lab — Structure Lab AU</title>
-  <meta name="description" content="Australian family, land and purpose structures — trusts, companies, SMSF, community land trusts, charities, co-ops, CGT and duty flags. General information, not advice.">
-  <meta name="theme-color" content="#2F5D4F">
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://acerlab.link/">
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="./site.webmanifest">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_AU">
-  <meta property="og:url" content="https://acerlab.link/">
-  <meta property="og:title" content="Acer Lab — Structure Lab AU">
-  <meta property="og:description" content="Family, land and purpose structures. Australia only.">
-  <meta property="og:image" content="https://acerlab.link/og.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Acer Lab — Structure Lab AU">
-  <meta name="twitter:description" content="Family, land and purpose structures. Australia only.">
-  <meta name="twitter:image" content="https://acerlab.link/og.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --paper: #eeece3;
-      --paper-deep: #e4e1d5;
-      --ink: #20261f;
-      --ink-soft: #4c5347;
-      --line: #cdc7b7;
-      --primary: #2f5d4f;
-      --primary-fg: #eeece3;
-      --primary-soft: #dce6df;
-      --clay: #96674a;
-      --clay-soft: #efe1d6;
-      --card: #f7f5ee;
-      --display: "Newsreader", "Iowan Old Style", Palatino, Georgia, serif;
-      --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-      --mono: "IBM Plex Mono", "SF Mono", ui-monospace, Menlo, monospace;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.55;
-      min-height: 100dvh;
-    }
-    a { color: var(--primary); text-underline-offset: 3px; }
-    a:hover { color: var(--clay); }
-    .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
-    header {
-      border-bottom: 1px solid var(--line);
-      background: var(--paper-deep);
-    }
-    header .wrap {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      padding-top: 1.15rem;
-      padding-bottom: 1.15rem;
-    }
-    .brand {
-      font-family: var(--display);
-      font-size: 1.35rem;
-      color: var(--primary);
-      text-decoration: none;
-      letter-spacing: -0.01em;
-    }
-    .brand:hover { color: var(--primary); }
-    .mark { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft); }
-    .hero { padding: 2.75rem 0 2rem; }
-    .kicker {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--clay);
-      margin: 0 0 0.7rem;
-    }
-    h1 {
-      font-family: var(--display);
-      font-weight: 500;
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      line-height: 1.15;
-      margin: 0 0 0.75rem;
-    }
-    .lede { color: var(--ink-soft); margin: 0 0 1.6rem; max-width: 36rem; }
-    .actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 2.75rem;
-      padding: 0.55rem 1rem;
-      border-radius: 2px;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      border: 1px solid transparent;
-    }
-    .btn-primary { background: var(--primary); color: var(--primary-fg); }
-    .btn-primary:hover { background: #254a3f; color: var(--primary-fg); }
-    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
-    .btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
-    .grid {
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: 1fr;
-      padding-bottom: 2.5rem;
-    }
-    @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 2px;
-      padding: 1rem 1.05rem 1.05rem;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-    .card:hover { border-color: color-mix(in srgb, var(--primary) 50%, var(--line)); }
-    .card h2 {
-      font-family: var(--sans);
-      font-size: 0.95rem;
-      font-weight: 500;
-      margin: 0 0 0.25rem;
-      color: var(--ink);
-    }
-    .card p { margin: 0; font-size: 0.8rem; color: var(--ink-soft); }
-    .note {
-      display: flex;
-      gap: 0.7rem;
-      align-items: flex-start;
-      border: 1px solid var(--line);
-      background: var(--clay-soft);
-      padding: 0.95rem 1rem;
-      margin: 0 0 2.5rem;
-      font-size: 0.9rem;
-    }
-    .note span.lock { color: var(--clay); font-family: var(--mono); font-size: 0.75rem; padding-top: 0.15rem; }
-    footer {
-      border-top: 1px solid var(--line);
-      background: var(--paper-deep);
-      padding: 1.1rem 0 1.4rem;
-      font-size: 0.75rem;
-      color: var(--ink-soft);
-    }
-    footer p { margin: 0 0 0.4rem; }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="wrap">
-      <a class="brand" href="/">Acer Lab</a>
-      <span class="mark">acerlab.link · AU</span>
-    </div>
-  </header>
-  <main class="wrap">
-    <section class="hero">
-      <p class="kicker">Structure Lab AU</p>
-      <h1>Family, land and purpose structures — Australia only.</h1>
-      <p class="lede">Trusts, companies, SMSF, community land trusts, charities and co-ops, with CGT and duty flags. Nineteen local structures. No LLCs, no FEIE, no Augusta rule.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="/lab/">Open Structure Lab</a>
-        <a class="btn btn-ghost" href="https://github.com/v2-prog/structure-lab">Source</a>
-      </div>
-    </section>
-    <section class="grid" aria-label="Ways in">
-      <a class="card" href="/lab/">
-        <h2>Hold investments for the family</h2>
-        <p>Private stack — trusts, companies, SMSF, bonds.</p>
-      </a>
-      <a class="card" href="/lab/">
-        <h2>Pay family members fairly</h2>
-        <p>Wages vs distributions, Div 6AA, s100A.</p>
-      </a>
-      <a class="card" href="/lab/">
-        <h2>Land for an eco-settlement or CLT</h2>
-        <p>Asset lock, duty, ground leases.</p>
-      </a>
-      <a class="card" href="/lab/">
-        <h2>Gift or bequest to a purpose entity</h2>
-        <p>CGT now vs testamentary, DGR deduction.</p>
-      </a>
-      <a class="card" href="/lab/">
-        <h2>Compare the structures</h2>
-        <p>Trust vs company vs co-op vs charity vs SMSF.</p>
-      </a>
-      <a class="card" href="/lab/">
-        <h2>Sell / gift / covenant CGT sketch</h2>
-        <p>Live flags, not a tax calculation.</p>
-      </a>
-    </section>
-    <p class="note">
-      <span class="lock" aria-hidden="true">▣</span>
-      <span>The hard line this whole tool holds to: a charity or community land trust with an asset lock cannot be a substitute for a family discretionary trust.</span>
-    </p>
-  </main>
-  <footer>
-    <div class="wrap">
-      <p>General information only. Not tax, legal or financial advice. Confirm with a registered tax agent and solicitor.</p>
-      <p>Canonical site <a href="https://acerlab.link/">acerlab.link</a>. Backup <a href="https://v2-prog.github.io/structure-lab/">GitHub Pages</a>. <code>earthacer.in</code> stays parked and is not this project.</p>
-    </div>
-  </footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        var base = "/";
+        var host = location.hostname;
+        var projects = { "structure-lab": 1, acerlab: 1 };
+        if (/\.github\.io$/i.test(host)) {
+          var seg = location.pathname.split("/").filter(Boolean)[0];
+          if (seg && projects[seg]) base = "/" + seg + "/";
+        }
+        document.write('<base href="' + base + '">');
+        document.write('<link rel="stylesheet" crossorigin href="' + base + 'assets/styles-D4Jhii1k.css">');
+        document.write('<script type="module" crossorigin src="' + base + 'assets/index-B8P7je1N.js"><\/script>');
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AcerLab</title>
+    <meta
+      name="description"
+      content="Australian family, land and purpose instruments — trusts, CLTs, charities, co-ops, CGT and duty flags. General information, not advice."
+    />
+    <meta name="theme-color" content="#2F5D4F" />
+    <meta name="apple-mobile-web-app-title" content="AcerLab" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="canonical" href="https://acerlab.link/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AcerLab" />
+    <meta property="og:title" content="AcerLab" />
+    <meta
+      property="og:description"
+      content="Family, land & purpose instruments — Australia."
+    />
+    <meta property="og:url" content="https://acerlab.link/" />
+    <meta property="og:image" content="https://acerlab.link/og.jpg" />
+    <meta property="og:locale" content="en_AU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AcerLab" />
+    <meta
+      name="twitter:description"
+      content="Family, land & purpose instruments — Australia."
+    />
+    <meta name="twitter:image" content="https://acerlab.link/og.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+    />
+  </head>
+  <body class="bg-paper text-ink">
+    <div id="acerlab-root"></div>
+  </body>
 </html>
