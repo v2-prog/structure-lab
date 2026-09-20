@@ -1,60 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-AU">
-  <head>
-    <meta charset="utf-8" />
-    <script>
-      (function () {
-        var base = "/";
-        var host = location.hostname;
-        var projects = { "structure-lab": 1, acerlab: 1 };
-        if (/\.github\.io$/i.test(host)) {
-          var seg = location.pathname.split("/").filter(Boolean)[0];
-          if (seg && projects[seg]) base = "/" + seg + "/";
-        }
-        document.write('<base href="' + base + '">');
-        document.write('<link rel="stylesheet" crossorigin href="' + base + 'assets/styles-D4Jhii1k.css">');
-        document.write('<script type="module" crossorigin src="' + base + 'assets/index-B8P7je1N.js"><\/script>');
-      })();
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AcerLab</title>
-    <meta
-      name="description"
-      content="Australian family, land and purpose instruments — trusts, CLTs, charities, co-ops, CGT and duty flags. General information, not advice."
-    />
-    <meta name="theme-color" content="#2F5D4F" />
-    <meta name="apple-mobile-web-app-title" content="AcerLab" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <link rel="canonical" href="https://acerlab.link/" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="manifest" href="./site.webmanifest" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="AcerLab" />
-    <meta property="og:title" content="AcerLab" />
-    <meta
-      property="og:description"
-      content="Family, land & purpose instruments — Australia."
-    />
-    <meta property="og:url" content="https://acerlab.link/" />
-    <meta property="og:image" content="https://acerlab.link/og.jpg" />
-    <meta property="og:locale" content="en_AU" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AcerLab" />
-    <meta
-      name="twitter:description"
-      content="Family, land & purpose instruments — Australia."
-    />
-    <meta name="twitter:image" content="https://acerlab.link/og.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
-    />
-  </head>
-  <body class="bg-paper text-ink">
-    <div id="acerlab-root"></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — Structure Lab AU</title>
+  <meta name="description" content="Australian family, land and purpose structures — trusts, CLTs, charities, co-ops, CGT and duty flags. General information, not advice.">
+  <meta name="theme-color" content="#2F5D4F">
+  <link rel="canonical" href="https://acerlab.link/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta property="og:title" content="Structure Lab AU">
+  <meta property="og:description" content="Family, land & purpose structures — Australia only.">
+  <meta property="og:url" content="https://acerlab.link/">
+  <meta property="og:image" content="https://acerlab.link/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <strong>Structure Lab AU</strong>
+        <span>Acer Lab · family, land &amp; purpose — Australia only</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+          <a class="is-current" href="index.html" aria-current="page"><span class="n">1</span>Home</a>
+          <a href="profile.html"><span class="n">2</span>Household profile</a>
+          <a href="explorer.html"><span class="n">3</span>Structure explorer</a>
+          <a href="workshop.html"><span class="n">4</span>Scenario workshop</a>
+          <a href="studio.html"><span class="n">5</span>CLT / charity / co-op studio</a>
+          <a href="compare.html"><span class="n">6</span>Compare</a>
+          <a href="checklist.html"><span class="n">7</span>Action checklist</a>
+          <a href="glossary.html"><span class="n">8</span>Glossary &amp; timeline</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="top">
+        <button class="menu-btn" type="button" data-open-nav aria-label="Open menu">☰</button>
+        <div class="crumb"><span>1</span><b>Home</b></div>
+      </header>
+      <main class="content">
+<h1>What are you trying to work out?</h1>
+<p class="lede">Pick the closest fit. Every screen after this stays Australia-only — no LLCs, no FEIE, no Augusta rule, just the local structures that actually apply.</p>
+<div class="grid two">
+  <a class="card" href="explorer.html"><h2>Hold investments for the family</h2><p>Private stack — trusts, companies, SMSF, bonds.</p></a>
+  <a class="card" href="workshop.html#pay"><h2>Pay family members fairly</h2><p>Wages vs distributions, Div 6AA, s100A.</p></a>
+  <a class="card" href="studio.html"><h2>Buy or hold land for an eco-settlement or CLT</h2><p>Asset lock, duty, ground leases.</p></a>
+  <a class="card" href="workshop.html#gift"><h2>Gift or bequest to a purpose entity</h2><p>CGT now vs testamentary, DGR deduction.</p></a>
+  <a class="card" href="compare.html"><h2>Compare trust vs company vs co-op vs charity vs SMSF</h2><p>Nineteen Australian structures.</p></a>
+  <a class="card" href="workshop.html#cgt"><h2>Run a sell / gift / covenant CGT sketch</h2><p>Live flags, not a tax calculation.</p></a>
+</div>
+<p class="note"><span class="mark">▣</span><span>A charity or community land trust with an asset lock cannot be a substitute for a family discretionary trust.</span></p>
+<p><a href="profile.html">Start with a household profile instead.</a></p>
+<p class="muted">Acer Lab publishes Structure Lab AU at <a href="https://acerlab.link/">acerlab.link</a>. This is a decision and explainer tool, not a store, not a blog, and not a booking site.</p>
+      </main>
+      <footer class="footer">General information only. Not tax, legal or financial advice. Confirm with a registered tax agent and solicitor. Rules include 2026–28 announced reforms that may change.</footer>
+    </div>
+  </div>
+  <div id="drawer" class="drawer">
+    <div class="scrim" data-close-nav></div>
+    <div class="panel">
+      <a class="brand" href="index.html"><strong>Structure Lab AU</strong><span>Acer Lab · Australia only</span></a>
+      <nav class="nav" aria-label="Mobile">
+            <a class="is-current" href="index.html" aria-current="page"><span class="n">1</span>Home</a>
+            <a href="profile.html"><span class="n">2</span>Household profile</a>
+            <a href="explorer.html"><span class="n">3</span>Structure explorer</a>
+            <a href="workshop.html"><span class="n">4</span>Scenario workshop</a>
+            <a href="studio.html"><span class="n">5</span>CLT / charity / co-op studio</a>
+            <a href="compare.html"><span class="n">6</span>Compare</a>
+            <a href="checklist.html"><span class="n">7</span>Action checklist</a>
+            <a href="glossary.html"><span class="n">8</span>Glossary &amp; timeline</a>
+      </nav>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
 </html>

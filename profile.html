@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Household profile — Structure Lab AU</title>
+  <meta name="description" content="Australian family, land and purpose structures — trusts, CLTs, charities, co-ops, CGT and duty flags. General information, not advice.">
+  <meta name="theme-color" content="#2F5D4F">
+  <link rel="canonical" href="https://acerlab.link/profile.html">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./app.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><strong>Structure Lab AU</strong><span>Acer Lab · family, land &amp; purpose — Australia only</span></a>
+      <nav class="nav" aria-label="Primary">
+          <a href="index.html"><span class="n">1</span>Home</a>
+          <a class="is-current" href="profile.html" aria-current="page"><span class="n">2</span>Household profile</a>
+          <a href="explorer.html"><span class="n">3</span>Structure explorer</a>
+          <a href="workshop.html"><span class="n">4</span>Scenario workshop</a>
+          <a href="studio.html"><span class="n">5</span>CLT / charity / co-op studio</a>
+          <a href="compare.html"><span class="n">6</span>Compare</a>
+          <a href="checklist.html"><span class="n">7</span>Action checklist</a>
+          <a href="glossary.html"><span class="n">8</span>Glossary &amp; timeline</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="top">
+        <button class="menu-btn" type="button" data-open-nav aria-label="Open menu">☰</button>
+        <div class="crumb"><span>2</span><b>Household profile</b></div>
+      </header>
+      <main class="content">
+<h1>Household profile</h1>
+<p class="lede">A short structured form. No account. Answers stay in this browser only and can be cleared at any time.</p>
+<form id="household-form">
+  <label class="field"><span>Household size</span>
+    <select name="size" required><option value="">Select</option><option value="1">One adult</option><option value="2">Two adults</option><option value="3-4">Three or four people</option><option value="5plus">Five or more</option></select>
+  </label>
+  <label class="field"><span>What is the land (if any) mainly for?</span>
+    <select name="land" required><option value="">Select</option><option value="home">Owner-occupier home</option><option value="invest">Investment / rental</option><option value="eco">Intended eco-settlement or community land</option><option value="none">No land in view yet</option></select>
+  </label>
+  <label class="field"><span>Does a purpose entity already exist?</span>
+    <select name="purpose" required><option value="">Select</option><option value="yes">Yes — charity, CLT, co-op or similar</option><option value="no">No</option><option value="unsure">Unsure</option></select>
+  </label>
+  <label class="field"><span>Is an SMSF in play?</span>
+    <select name="smsf" required><option value="">Select</option><option value="yes">Yes</option><option value="no">No</option><option value="planning">Considering one</option></select>
+  </label>
+  <label class="field"><span>Will / binding death benefit nomination</span>
+    <select name="will" required><option value="">Select</option><option value="yes">A current will and/or BDBN exists</option><option value="partial">Some documents, not complete</option><option value="no">Neither in place</option></select>
+  </label>
+  <label class="field"><span>State or Territory of the land</span>
+    <select name="state" required><option value="">Select</option><option value="ACT">ACT</option><option value="NSW">NSW</option><option value="QLD">QLD</option><option value="VIC">VIC</option><option value="SA">SA</option><option value="WA">WA</option><option value="TAS">TAS</option><option value="NT">NT</option><option value="none">No land / not sure</option></select>
+  </label>
+  <div class="actions">
+    <button class="btn" type="submit">See the neighbourhood</button>
+    <button class="btn btn-ghost" type="button" id="clear-profile">Clear this browser record</button>
+  </div>
+</form>
+<div id="profile-out" class="summary" hidden>
+  <h2>You are in this neighbourhood of structures</h2>
+  <ul data-summary></ul>
+  <div class="actions">
+    <a class="btn" href="explorer.html">Open the explorer</a>
+    <a class="btn btn-ghost" href="studio.html">Open the studio</a>
+  </div>
+</div>
+<p class="note"><span class="mark">▣</span><span>A charity or community land trust with an asset lock cannot be a substitute for a family discretionary trust.</span></p>
+      </main>
+      <footer class="footer">General information only. Not tax, legal or financial advice. Confirm with a registered tax agent and solicitor. Rules include 2026–28 announced reforms that may change.</footer>
+    </div>
+  </div>
+  <div id="drawer" class="drawer">
+    <div class="scrim" data-close-nav></div>
+    <div class="panel">
+      <a class="brand" href="index.html"><strong>Structure Lab AU</strong><span>Acer Lab · Australia only</span></a>
+      <nav class="nav" aria-label="Mobile">
+            <a href="index.html"><span class="n">1</span>Home</a>
+            <a class="is-current" href="profile.html" aria-current="page"><span class="n">2</span>Household profile</a>
+            <a href="explorer.html"><span class="n">3</span>Structure explorer</a>
+            <a href="workshop.html"><span class="n">4</span>Scenario workshop</a>
+            <a href="studio.html"><span class="n">5</span>CLT / charity / co-op studio</a>
+            <a href="compare.html"><span class="n">6</span>Compare</a>
+            <a href="checklist.html"><span class="n">7</span>Action checklist</a>
+            <a href="glossary.html"><span class="n">8</span>Glossary &amp; timeline</a>
+      </nav>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
