@@ -18,43 +18,35 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./app.css">
 </head>
-<body>
+<body data-page="home">
   <div class="shell">
     <aside class="sidebar">
       <a class="brand" href="index.html">
         <strong>Structure Lab AU</strong>
-        <span>Acer Lab · family, land &amp; purpose — Australia only</span>
+        <span>Family, land &amp; purpose structures — Australia only</span>
       </a>
-      <nav class="nav" aria-label="Primary">
-          <a class="is-current" href="index.html" aria-current="page"><span class="n">1</span>Home</a>
-          <a href="profile.html"><span class="n">2</span>Household profile</a>
-          <a href="explorer.html"><span class="n">3</span>Structure explorer</a>
-          <a href="workshop.html"><span class="n">4</span>Scenario workshop</a>
-          <a href="studio.html"><span class="n">5</span>CLT / charity / co-op studio</a>
-          <a href="compare.html"><span class="n">6</span>Compare</a>
-          <a href="checklist.html"><span class="n">7</span>Action checklist</a>
-          <a href="glossary.html"><span class="n">8</span>Glossary &amp; timeline</a>
-      </nav>
+      <nav class="nav" aria-label="Primary" data-nav></nav>
     </aside>
     <div class="main">
       <header class="top">
         <button class="menu-btn" type="button" data-open-nav aria-label="Open menu">☰</button>
-        <div class="crumb"><span>1</span><b>Home</b></div>
+        <div class="crumb"><span data-crumb-n></span><b data-crumb-label></b></div>
       </header>
       <main class="content">
 <h1>What are you trying to work out?</h1>
 <p class="lede">Pick the closest fit. Every screen after this stays Australia-only — no LLCs, no FEIE, no Augusta rule, just the local structures that actually apply.</p>
 <div class="grid two">
-  <a class="card" href="explorer.html"><h2>Hold investments for the family</h2><p>Private stack — trusts, companies, SMSF, bonds.</p></a>
-  <a class="card" href="workshop.html#pay"><h2>Pay family members fairly</h2><p>Wages vs distributions, Div 6AA, s100A.</p></a>
-  <a class="card" href="studio.html"><h2>Buy or hold land for an eco-settlement or CLT</h2><p>Asset lock, duty, ground leases.</p></a>
-  <a class="card" href="workshop.html#gift"><h2>Gift or bequest to a purpose entity</h2><p>CGT now vs testamentary, DGR deduction.</p></a>
-  <a class="card" href="compare.html"><h2>Compare trust vs company vs co-op vs charity vs SMSF</h2><p>Nineteen Australian structures.</p></a>
-  <a class="card" href="workshop.html#cgt"><h2>Run a sell / gift / covenant CGT sketch</h2><p>Live flags, not a tax calculation.</p></a>
+  <a class="card" href="explorer.html#DT"><span class="num">01</span><h2>Hold investments for the family</h2><p>Private stack: trusts, companies, SMSF, bonds.</p></a>
+  <a class="card" href="workshop.html#pay"><span class="num">02</span><h2>Pay family members fairly</h2><p>Wages vs distributions, Div 6AA, s100A.</p></a>
+  <a class="card" href="studio.html"><span class="num">03</span><h2>Buy or hold land for an eco-settlement or CLT</h2><p>Asset lock, duty, ground leases.</p></a>
+  <a class="card" href="workshop.html#gift"><span class="num">04</span><h2>Gift or bequest to a purpose entity</h2><p>CGT now vs testamentary, DGR deduction.</p></a>
+  <a class="card" href="compare.html"><span class="num">05</span><h2>Compare trust vs company vs co-op vs charity vs SMSF</h2><p>Nineteen Australian structures.</p></a>
+  <a class="card" href="workshop.html#cgt"><span class="num">06</span><h2>Run a sell / gift / covenant CGT sketch</h2><p>Live flags, not a tax calculation.</p></a>
 </div>
+<p><a href="profile.html">Start with a household profile instead.</a> · <a href="succession.html">Or start with succession and continuity.</a></p>
 <p class="note"><span class="mark">▣</span><span>A charity or community land trust with an asset lock cannot be a substitute for a family discretionary trust.</span></p>
-<p><a href="profile.html">Start with a household profile instead.</a></p>
-<p class="muted">Acer Lab publishes Structure Lab AU at <a href="https://acerlab.link/">acerlab.link</a>. This is a decision and explainer tool, not a store, not a blog, and not a booking site.</p>
+<p class="muted">Structure Lab AU is the workshop notebook of Earth Acer (also branded Ever Earth Acre). Canonical site <a href="https://acerlab.link/">acerlab.link</a>. earthacer.in remains a parked brand domain. This is a decision and explainer tool — not a store, not a blog, not a booking site, and not a US nature-credits company.</p>
+<div class="contact">Optional note, not a capture form. If you already work with a registered tax agent and solicitor, take this notebook to them. Nothing here is a quote, a booking, or a product.</div>
       </main>
       <footer class="footer">General information only. Not tax, legal or financial advice. Confirm with a registered tax agent and solicitor. Rules include 2026–28 announced reforms that may change.</footer>
     </div>
@@ -62,17 +54,8 @@
   <div id="drawer" class="drawer">
     <div class="scrim" data-close-nav></div>
     <div class="panel">
-      <a class="brand" href="index.html"><strong>Structure Lab AU</strong><span>Acer Lab · Australia only</span></a>
-      <nav class="nav" aria-label="Mobile">
-            <a class="is-current" href="index.html" aria-current="page"><span class="n">1</span>Home</a>
-            <a href="profile.html"><span class="n">2</span>Household profile</a>
-            <a href="explorer.html"><span class="n">3</span>Structure explorer</a>
-            <a href="workshop.html"><span class="n">4</span>Scenario workshop</a>
-            <a href="studio.html"><span class="n">5</span>CLT / charity / co-op studio</a>
-            <a href="compare.html"><span class="n">6</span>Compare</a>
-            <a href="checklist.html"><span class="n">7</span>Action checklist</a>
-            <a href="glossary.html"><span class="n">8</span>Glossary &amp; timeline</a>
-      </nav>
+      <a class="brand" href="index.html"><strong>Structure Lab AU</strong><span>Earth Acer · Ever Earth Acre · Australia only</span></a>
+      <nav class="nav" aria-label="Mobile" data-nav></nav>
     </div>
   </div>
   <script src="./app.js"></script>
