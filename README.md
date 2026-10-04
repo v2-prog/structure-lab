@@ -13,7 +13,7 @@ A charity or community land trust with an asset lock cannot be a substitute for 
 
 ## What this is
 
-A static nine-room notebook. Not a store, not a blog, not a booking site, and not a US nature-credits company. No accounts. No lead-capture. No invented duty tables or dollar savings.
+A static twelve-room notebook. Not a store, not a blog, not a booking site, and not a US nature-credits company. No accounts. No lead-capture. No invented duty tables or dollar savings.
 
 1. Home — decision screen  
 2. Household profile (answers stored in `localStorage` only)  
@@ -24,6 +24,9 @@ A static nine-room notebook. Not a store, not a blog, not a booking site, and no
 7. Compare — including succession columns  
 8. Action checklist  
 9. Glossary & timeline  
+10. Date night & buckets — Barefoot steps, Blow / Mojo / Grow  
+11. Fearless Folder — NSW will, enduring documents, super nomination  
+12. Succession 321 — twelve-station individual, family, business and community walk  
 
 Australia only. No LLCs, S-corps, FEIE, 1031, Augusta rule, or Delaware vehicles.
 
