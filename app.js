@@ -12,7 +12,10 @@
     { n: "6", href: "studio.html", id: "studio", label: "CLT / charity / co-op studio" },
     { n: "7", href: "compare.html", id: "compare", label: "Compare" },
     { n: "8", href: "checklist.html", id: "checklist", label: "Action checklist" },
-    { n: "9", href: "glossary.html", id: "glossary", label: "Glossary & timeline" }
+    { n: "9", href: "glossary.html", id: "glossary", label: "Glossary & timeline" },
+    { n: "10", href: "date-night.html", id: "date-night", label: "Date night & buckets" },
+    { n: "11", href: "fearless.html", id: "fearless", label: "Fearless Folder" },
+    { n: "12", href: "succession-321.html", id: "succession-321", label: "Succession 321" }
   ];
 
   function pageId() {
